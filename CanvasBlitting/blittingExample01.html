@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML5 Blitting with the Canvas - Take01</title>
+	<meta charset="utf-8">
+	
+	<link href="css/blitting1.css" rel="stylesheet">
+	
+</head>
+
+<body onload="init()">
+
+	<canvas id="myCanvas" width="500" height="750"></canvas>
+	
+	<div id="testInfo"></div>
+	
+	<br>
+	
+	<!-- We are going to use a new form element supported
+	     in the webkit.  It may show up as a text field in
+		 Firefox and IE -->
+	<input type="range" id="slider" style="width:500px" min="0" max="6500" step="1" value="0">
+	<!-- max value will be set up based on pic width of 500 x 13 
+	     (13 is the index of the last image of 14 images) = 6500 -->
+		 
+	<script src="js/blitting01.js"></script>
+</body>
+</html>

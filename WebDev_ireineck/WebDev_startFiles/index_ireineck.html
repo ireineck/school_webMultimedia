@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Web Development - CVTC ITPA - Ian Reineck</title>
+	<meta name="description" content="Web Development Nuts and Bolts">
+	<meta name="author" content="Your Name Here">
+	
+	<link rel="stylesheet" href="css/styles_ireineck.css">
+	
+	<link href="http://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+	
+	
+	<!-- What follows is the so-called "HTML5 shiv" which is a 
+		 conditional comment that provides you with the
+		 ability to target specific versions of the IE browser with 
+		 scripts or styles.
+		 
+		 Note that http://html5shiv.googlecode.com/svn/trunk/html5.js
+		 is Remy Sharp's script for handling HTML5 features in IE versions
+		 older than IE9.  You could replace this with the Modernizr
+		 JavaScript library for example.
+		 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+	
+		<div id="headerWrap">
+			<header>
+			
+				<div id="logo">
+					WEB DEV
+				</div>
+				
+				<nav>
+					<ul>
+						<li id="first"><a id="html5" href="#">HTML5</a></li>
+						<li><a id="css3" href="#">CSS3</a></li>
+						<li><a id="jquery" href="#">jQuery</a></li>
+						<li><a id="php" href="#">PHP</a></li>
+						<li><a id="flash" href="#">Flash</a></li>
+					</ul>
+				</nav>
+				
+			</header>
+		</div>   <!-- end div#headerWrap -->
+		
+		<div id="mainTopic">
+		
+			<div id="logoPic">
+				<img src="images/webDev_polaroid.png" alt="HTML5, CSS3, jQuery/JavaScript, PHP, and Flash logo picture">
+			</div>
+			
+			<!-- this div will be populated with a description of the topic that 
+			     has been clicked by the user -->
+			<div id="topicDesc">
+				<p>Web development is an everchanging landscape.  If you like exploring new paths and topics then you've come to the right field of study.</p>
+			</div>
+			
+		</div>   <!-- end #mainTopic div -->
+		
+		<div id="contentWrap">
+			<div id="primary">
+				
+				<div id="subjectTab">
+					Web Development topics: <span id="topic">Web Dev</span>
+				</div>
+					
+				<div id="content">
+				
+					<div id="defaultTabs" class="contentContainer">
+						<div id="defaultTab01" class="topicContent">
+							<a href="http://www.modernizr.com"><img src="images/sitePics/sitePic_Modernizr.png" alt="The Modernizr website - www.modernizr.com"></a>
+							
+							<h3>The Modernizr website - "front-end development done right"</h3>
+							<p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.
+							<a href="http://www.modernizr.com">read more</a></p>
+							<div>General</div>
+						</div>
+						
+						<div id="defaultTab02" class="topicContent">
+							<a href="http://tympanus.net/codrops"><img src="images/sitePics/sitePic_codrops.png" alt="Tutorials and articles on web design/development including jQuery, HTML5, and CSS3"></a>
+							
+							<h3>Tutorials on jQuery, HTML5, and CSS3</h3>
+							<p>Codrops is a web development blog that publishes articles and tutorials about web design, programming and usability. The team of Codrops is dedicated to provide useful and qualitative content that is free of charge.
+							<a href="http://tympanus.net/codrops">read more</a></p>
+							<div>General</div>
+						</div>
+						
+					</div>   <!-- end div#jqueryTabs -->
+					
+					<div id="html5Tabs" class="contentContainer">
+						<div id="html5Tab01" class="topicContent">
+							<a href="http://www.w3schools.com/html/default.asp"><img src="images/sitePics/sitePic_HTML501.png" alt="Learn HTML5 at www.w3schools.com"></a>
+							
+							<h3>Learn HTML5 at w3schools.com</h3>
+							<p>Go through an HTML5 tutorial and learn about new elements in HTML5 relating to video, audio, canvas, and forms.  Utilize a reference for HTML5 tags, attributes, and events. 
+							<a href="http://www.w3schools.com/html/default.asp">read more</a></p>
+							<div>HTML5</div>
+						</div>
+						
+						<div id="html5Tab02" class="topicContent">
+							<a href="http://www.sitepoint.com/tag/html5-dev-center"><img src="images/sitePics/sitePic_HTML502.png" alt="sitepoint.com - HTML5 Development Center"></a>
+							
+							<h3>The HTML5 Development Center at sitepoint.com</h3>
+							<p>One of many sections on the Sitepoint website that hosts articles related to web development.  This page has a wide variety of articles that relate to HTML5.
+							<a href="http://www.sitepoint.com/tag/html5-dev-center">read more</a></p>
+							<div>HTML5</div>
+						</div>
+						
+						<div id="html5Tab03" class="topicContent">
+							<a href="http://dev.w3.org/html5/html-author"><img src="images/sitePics/sitePic_HTML503.png" alt="The W3C HTML 5 Reference"></a>
+							
+							<h3>The W3C HTML 5 Reference</h3>
+							<p>A web developer's guide to HTML 5 drafted by the W3C.  Covers most everything related to the HTML 5 specification including all of the tags, etc...
+							<a href="http://dev.w3.org/html5/html-author">read more</a></p>
+							<div>HTML5</div>
+						</div>
+					</div>   <!-- end div#html5Tabs -->
+					
+					
+					<div id="css3Tabs" class="contentContainer">
+						<div id="css3Tab01" class="topicContent">
+							<a href="http://www.w3schools.com/css3/default.asp"><img src="images/sitePics/sitePic_CSS301.png" alt="Learn CSS3 at www.w3schools.com"></a>
+							
+							<h3>Learn CSS3 at w3schools.com</h3>
+							<p>Go through a CSS3 tutorial and learn about new effects available and what browsers they work in.  There is also a CSS3 reference on this site for selectors, attribute/value pairs, etc...
+							<a href="http://www.w3schools.com/css3/default.asp">read more</a></p>
+							<div>CSS3</div>
+						</div>
+						
+						<div id="css3Tab02" class="topicContent">
+							<a href="http://www.css3.info"><img src="images/sitePics/sitePic_CSS302.png" alt="CSS3.info - Everything you need to know about CSS3"></a>
+							
+							<h3>CSS3.info - Everything you need to know about CSS3</h3>
+							<p>This site contains a preview of CSS3 attributes and their values along with many articles on CSS3 topics.  It also allows you to test various CSS3 selectors in your browser to see if they are compatible.
+							<a href="http://www.css3.info">read more</a></p>
+							<div>CSS3</div>
+						</div>
+						
+						<div id="css3Tab03" class="topicContent">
+							<a href="http://css3please.com"><img src="images/sitePics/sitePic_CSS303.png" alt="css3please.com"></a>
+							
+							<h3>The CSS3, please website</h3>
+							<p>CSS3, please is a no-frills site showing examples of new CSS3 selectors and attribute/value pairs that you can copy and paste right into your browser.  It includes all of the variants that work in any browsers that support CSS3.
+							<a href="http://css3please.com">read more</a></p>
+							<div>CSS3</div>
+						</div>
+					</div>   <!-- end div#css3Tabs -->
+					
+					
+					<div id="jqueryTabs" class="contentContainer">
+						<div id="jqueryTab01" class="topicContent">
+							<a href="http://www.jquery.com"><img src="images/sitePics/sitePic_jQuery01.png" alt="The jQuery website - www.jquery.com"></a>
+							
+							<h3>The jQuery website - "write less, do more"</h3>
+							<p>Learn about and download the jQuery JavaScript library at www.jquery.com.  jQuery's purpose is to allow you to more easily traverse HTML documents, handle events, and animate content via  easy to understand code.
+							<a href="http://www.jquery.com">read more</a></p>
+							<div>jQuery</div>
+						</div>
+						
+						<div id="jqueryTab02" class="topicContent">
+							<a href="http://api.jquery.com"><img src="images/sitePics/sitePic_jQuery02.png" alt="Help documentation for jQuery methods at api.jquery.com"></a>
+							
+							<h3>The jQuery API - documentation of jQuery methods</h3>
+							<p>This extremely helpful website contains help documentation for all of jQuery's built-in methods.  The help pages are laid out in a easy to read fashion yet give very good depth of information.
+							<a href="http://api.jquery.com">read more</a></p>
+							<div>jQuery</div>
+						</div>
+						
+					</div>   <!-- end div#jqueryTabs -->
+					
+					
+					<div id="phpTabs" class="contentContainer">
+						<div id="phpTab01" class="topicContent">
+							<a href="http://www.jquery.com"><img src="images/sitePics/sitePic_php01.png" alt="The jQuery website - www.jquery.com"></a>
+							
+							<h3>The jQuery website - "write less, do more"</h3>
+							<p>Learn about and download the jQuery JavaScript library at www.jquery.com.  jQuery's purpose is to allow you to more easily traverse HTML documents, handle events, and animate content via  easy to understand code.
+							<a href="http://www.jquery.com">read more</a></p>
+							<div>PHP</div>
+						</div>
+						
+						<div id="phpTab02" class="topicContent">
+							<a href="http://api.jquery.com"><img src="images/sitePics/sitePic_php02.png" alt="Help documentation for jQuery methods at api.jquery.com"></a>
+							
+							<h3>The jQuery API - documentation of jQuery methods</h3>
+							<p>This extremely helpful website contains help documentation for all of jQuery's built-in methods.  The help pages are laid out in a easy to read fashion yet give very good depth of information.
+							<a href="http://api.jquery.com">read more</a></p>
+							<div>PHP</div>
+						</div>
+						
+						<div id="phpTab03" class="topicContent">
+							<a href="http://tympanus.net/codrops"><img src="images/sitePics/sitePic_php03.png" alt="Tutorials and articles on web design/development including jQuery, HTML5, and CSS3"></a>
+							
+							<h3>Tutorials on jQuery, HTML5, and CSS3</h3>
+							<p>Codrops is a web development blog that publishes articles and tutorials about web design, programming and usability. The team of Codrops is dedicated to provide useful and qualitative content that is free of charge.
+							<a href="http://tympanus.net/codrops">read more</a></p>
+							<div>PHP</div>
+						</div>
+					</div>   <!-- end div#phpTabs -->
+					
+					
+					<div id="flashTabs" class="contentContainer">
+						<div id="flashTab01" class="topicContent">
+							<a href="http://www.jquery.com"><img src="images/sitePics/sitePic_flash01.png" alt="The jQuery website - www.jquery.com"></a>
+							
+							<h3>The jQuery website - "write less, do more"</h3>
+							<p>Learn about and download the jQuery JavaScript library at www.jquery.com.  jQuery's purpose is to allow you to more easily traverse HTML documents, handle events, and animate content via  easy to understand code.
+							<a href="http://www.jquery.com">read more</a></p>
+							<div>Flash</div>
+						</div>
+						
+						<div id="flashTab02" class="topicContent">
+							<a href="http://api.jquery.com"><img src="images/sitePics/sitePic_flash02.png" alt="Help documentation for jQuery methods at api.jquery.com"></a>
+							
+							<h3>The jQuery API - documentation of jQuery methods</h3>
+							<p>This extremely helpful website contains help documentation for all of jQuery's built-in methods.  The help pages are laid out in a easy to read fashion yet give very good depth of information.
+							<a href="http://api.jquery.com">read more</a></p>
+							<div>Flash</div>
+						</div>
+						
+						<div id="flashTab03" class="topicContent">
+							<a href="http://tympanus.net/codrops"><img src="images/sitePics/sitePic_flash03.png" alt="Tutorials and articles on web design/development including jQuery, HTML5, and CSS3"></a>
+							
+							<h3>Tutorials on jQuery, HTML5, and CSS3</h3>
+							<p>Codrops is a web development blog that publishes articles and tutorials about web design, programming and usability. The team of Codrops is dedicated to provide useful and qualitative content that is free of charge.
+							<a href="http://tympanus.net/codrops">read more</a></p>
+							<div>Flash</div>
+						</div>
+					</div>   <!-- end div#flashTabs -->
+
+				</div>  <!-- end div#content -->
+					
+			</div>   <!-- end #primary div -->
+			
+			<div id="leftSideBar">
+				<!--leftSideBar-->
+				
+			</div>
+			
+			<div id="ninjaTab">
+				<img src="images/ninja01_small.png" id="ninjaJump" alt="Jumping Ninja">
+			</div>
+			
+			<div id="ninjaPanel">
+				<h2>Become a <a href="#" id="webNinjaLink">Web Ninja</a>!</h2>
+				
+				<p>The ITPA program at CVTC trains you to master web pages with all the cool bells and whistles.</p>
+				
+				<br>
+				
+				<p>Learn the most popular programming languages in the world, databases, and animation while creating mobile and desktop apps.</p>
+				
+				<img src="images/ninja02_small.png" id="ninjaWarrior" alt="Ninja Warrior">
+				
+				<br><br>
+				
+				<p id="webWarrior">Consider the way of the web warrior<br><span id="atCVTC">at CVTC!</span></p>
+				<br>
+			</div>
+		</div>   <!-- end div#contentWrap -->
+			
+		<div id="secondary">
+			
+			<div id="box1" class="box">
+				<div id="aboutWebDev">
+					<h4>About Web Dev</h4>
+					
+					<p>
+					WebDev is a web repository for all things web design and development.  It is a reference site for use by students in the study of web development.
+					
+					<br><br>
+					
+					This site is also meant to showcase facets of each of the web development technologies discussed on the site meaning each of the technologies has actually been used in the design/development of this website.
+					</p>
+				</div>
+			</div>
+			
+			<div id="box2" class="box">
+				<div id="aboutTopic">
+					<h4><span id="about">Web Dev</span> Topics</h4>
+					
+					<ul id="accordion">
+						<!--<li class="active">-->
+						<li>
+							<p class="topicHead">HTML5 &raquo;</p>
+							<ul>
+								<li><a href="http://www.w3schools.com/html5/html5_reference.asp">w3schools - Reference</a></li>
+								<li><a href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/">HTML5 Cheatsheet</a></li>
+								<li><a href="http://www.html5rocks.com/en/">HTML5 Rocks - Resource</a></li>
+								<li><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
+								<li><a href="http://sixrevisions.com/html/the-only-html5-resources-you-need-for-getting-up-to-speed/">Six Revisions - HTML5</a></li>
+								<li><a href="http://www.smashingmagazine.com/tag/html5/">Smashing Magazine - HTML5</a></li>
+								
+							</ul>
+						</li>
+						<li>
+							<p class="topicHead">CSS3 &raquo;</p>
+							<ul>
+								<li><a href="http://www.smashingmagazine.com/learning-css3-useful-reference-guide/">CSS 3 reference guide</a></li>
+								<li><a href="http://www.smashingmagazine.com/tag/css3/">Smashing Magazine - CSS3</a></li>
+								<li><a href="http://www.cssportal.com/">CSS Portal</a></li>
+								<li><a href="http://www.bloggermint.com/category/css/">Bloggermint - CSS</a></li>
+								<li><a href="http://www.sitepoint.com/7-best-css3-utilities/">CSS3 Utilities</a></li>
+							</ul>
+						</li>
+						<li>
+							<p class="topicHead">jQuery &raquo;</p>
+							<ul>
+								<li><a href="http://www.w3schools.com/jquery/default.asp">w3schools - Learn jQuery</a></li>
+								<li><a href="http://jqueryui.com/">jQuery UI</a></li>
+								<li><a href="http://jquerymobile.com/">jQuery Mobile</a></li>
+								<li><a href="http://docs.jquery.com/Tutorials">jQuery Tutorials - jquery.com</a></li>
+								<li><a href="http://net.tutsplus.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/">jQuery - Nettuts Series</a></li>
+								<li><a href="http://www.mkyong.com/tutorials/jquery-tutorials/">jQuery Resource Articles</a></li>
+							</ul>
+						</li>
+						<li>
+							<p class="topicHead">PHP &raquo;</p>
+							<ul>
+								<li><a href="http://www.goodphptutorials.com/">Good PHP Tutorials</a></li>
+								<li><a href="http://www.phpbuilder.com/">PHP Builder</a></li>
+								<li><a href="http://net.tutsplus.com/category/tutorials/php/">Nettuts - PHP</a></li>
+								<li><a href="http://www.developphp.com/">DevelopPHP.com</a></li>
+								<li><a href="http://weblogtoolscollection.com/regex/regex.php">Regular Expressions</a></li>
+							</ul>
+						</li>
+						<li>
+							<p class="topicHead">Flash &raquo;</p>
+							<ul>
+								<li><a href="http://www.adobe.com/devnet/flash.html">Flash Developer Center</a></li>
+								<li><a href="http://www.flashgametuts.com/">Flash Game Tuts</a></li>
+								<li><a href="http://flashandmath.com/">flashandmath.com tutorials</a></li>
+								<li><a href="http://www.cartoonsmart.com/">CartoonSmart</a></li>
+								<li><a href="http://www.tutvid.com/tutorials/flash/index.php">tutvid - CS4 tutorials</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			
+			<div id="box3" class="box">
+				<div id="favorites">
+					<h4>Web Dev favorites</h4>
+					
+					<ul>
+						<li id="first"><a href="http://www.webresourcesdepot.com/" class="wrd">Web Resources Depot</a></li>
+						<!--<li><a href="http://creamycss.com/" class="cream">Creamy CSS</a></li>-->
+						<li><a href="http://www.2expertsdesign.com/" class="experts">2experts Design</a></li>
+						<li><a href="http://www.w3avenue.com/" class="w3avenue">W3Avenue</a></li>
+						<li><a href="http://desizntech.info/" class="dt">Desizn Tech</a></li>
+						<li><a href="http://tutorialzine.com/" class="tzine">Tutorialzine</a></li>
+						<li><a href="http://www.webappers.com/" class="wapps">Webappers</a></li>
+						<li><a href="http://www.smashingmagazine.com/" class="smashing">Smashing Magazine</a></li>
+						<li><a href="http://www.designerslist.info/" class="designerslist">Designers List</a>
+						</li><li class="last"><a href="http://webdesignledger.com/" class="wdl">web design ledger</a></li>
+					</ul>
+				</div>  <!-- end div#favorites -->
+			</div>  <!-- end div#box3 -->
+			
+		</div>   <!-- end #secondary div -->
+			
+		
+		<div id="footerWrap">
+			<footer>
+			
+				<p>Design by WebDev</p>
+			
+				<section id="authors">
+					<section></section>
+				</section>
+				
+				<section id="copyright">&copy; 2015 <a href="index.html">WebDev</a></section>
+			
+			</footer>
+		</div>  <!-- end div#footerWrap -->
+	
+	</div> <!-- end div#wrapper -->
+	
+	<script type="text/javascript" src="js/plugins/CSSPlugin.min.js"></script>
+	<script type="text/javascript" src="js/easing/EasePack.min.js"></script>
+	<script type="text/javascript" src="js/TweenLite.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jqueryRotate.js"></script>
+    <script src="js/replaceTopic_ireineck.js"></script>
+    <script src="js/ninjaPanel_ireineck.js"></script>
+    <script src="js/topicAccordian_ireineck.js"></script>
+<!--
+	<script src="js/topicAccordian.js"></script>
+	<script src="js/ninjaPanel.js"></script> 
+-->
+
+</body>
+</html>

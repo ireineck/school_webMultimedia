@@ -1,0 +1,81 @@
+body {
+    
+    color: #fff;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+
+wrapper {
+/*
+    margin: 0 auto; 
+    width: 960px;
+*/
+    
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+    perspective: 1000px;
+    
+}
+
+#bg {
+   
+    transform: rotate3d(.2, 1, 0, 30deg);
+    
+}
+
+video {
+/*
+    border: 1px solid blue; 
+    margin: 20px;
+    opacity: .6;
+    border-radius: 20px; 
+    box-shadow: 10px 10px 8px #000;
+    
+    transition: all 1s ease; 
+    
+*/
+    
+    
+}
+
+video:hover {
+    
+/*
+    box-shadow: 44px 44px 24px #000;
+    opacity: 1;
+    transform: scale(1.2) rotate(5deg) skew(-5deg);
+*/
+}
+
+
+#gradient {
+    
+    width: 864px;
+    height: 440px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid red;
+    top: -484px;
+    
+    background-image: -webkit-linear-gradient(
+                        top, 
+                        rgba(255,255,255,.8),
+                        rgba(255,255,255,.0)
+                        );
+    background-image: -moz-linear-gradient(
+                        top, 
+                        rgba(255,255,255,.8),
+                        rgba(255,255,255,.0)
+                        );
+    background-image: linear-gradient(
+                        top, 
+                        rgba(255,255,255,.8),
+                        rgba(255,255,255,.0)
+                        );
+}
+
+

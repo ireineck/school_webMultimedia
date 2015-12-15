@@ -1,0 +1,7 @@
+body {
+	background: #222;
+}
+
+#myCanvas {
+	border: 2px dotted rgba(0, 255, 0, .8);
+}

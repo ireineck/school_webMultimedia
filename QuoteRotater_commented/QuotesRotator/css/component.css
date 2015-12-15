@@ -1,0 +1,119 @@
+/* div.quoteRotator contains all of the .quoteContent div's */
+.quoteRotator {
+	position: relative;    /* positioning parent */
+	margin: 3em auto 5em auto;  /* center with varying top and bottom margins */
+	
+	/* The max-width CSS property is used to set the maximum width of a given 
+	element. It prevents the used value of the width property from becoming larger 
+	than the value specified for max-width.
+
+	max-width overrides width, but min-width overrides max-width.
+
+	For more info see: https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
+	*/
+	max-width: 800px;
+	width: 100%;
+	
+	/* The min-height CSS property is used to set the minimum height of a given 
+	element. It prevents the used value of the height property from becoming 
+	smaller than the value specified for min-height.
+
+	The value of min-height overrides both max-height and height.
+
+	For more info see: https://developer.mozilla.org/en-US/docs/Web/CSS/min-height
+	*/
+	min-height: 400px;
+}
+
+.quoteRotator .quoteContent {
+	position: absolute;
+	min-height: 200px;
+	border-top: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 2em 0;
+	top: 0;
+	z-index: 0;
+	opacity: 0;   /* hide this content via transparency for now... */
+	width: 100%;
+}
+
+/* If Modernizr determines JavaScript is disabled by giving the html tag
+   a class of "no-js", then use this style rule for the quote content div's */
+.no-js .quoteRotator .quoteContent {
+	border-bottom: none;
+}
+
+.quoteRotator .quoteContent.quoteCurrent,
+.no-js .quoteRotator .quoteContent {
+	position: relative; 
+	z-index: 100;
+	/* allow click or tap behaviour to “pass through” an element to another element 
+	below it on the Z axis */
+	pointer-events: auto;
+	opacity: 1;   /* show the current quote */
+}
+
+/* Not really sure what these next two rules really gain us...? */
+.quoteRotator .quoteContent:before,
+.quoteRotator .quoteContent:after {
+	content: " ";
+	
+	/* Behaves like the <table> HTML element. It defines a block-level box. */
+	display: table;
+}
+
+.quoteRotator .quoteContent:after {
+	clear: both;
+}
+
+/* This is the progress bar we will see being animated from left-to-right
+   via jQuery code */
+.quoteProgress {
+	position: absolute;
+	background: #47a3da;
+	height: 1px;
+	width: 0%;   /* starting value which will be modified by our jQuery code */
+	top: 0;
+	z-index: 1000;
+}
+
+.quoteRotator blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.quoteRotator blockquote p {
+	font-size: 2em;
+	color: #888;
+	font-weight: 300;
+	margin: 0.4em 0 1em;
+}
+
+/* This is for the author of the quote */
+.quoteRotator blockquote footer {
+	font-size: 1.2em;
+}
+
+/* Use a :before pseudo-element to place a "- " before the quote's author */
+.quoteRotator blockquote footer:before {
+	content: '― ';
+}
+
+/* Move the quote's image to the right */
+.quoteRotator .quoteContent img {
+	float: right;
+	margin-left: 3em;
+}
+
+/* Example for media query */
+@media screen and (max-width: 30.6em) { 
+
+	.quoteRotator {
+		font-size: 70%;
+	}
+
+	.quoteRotator img {
+		width: 80px;
+	}
+
+}

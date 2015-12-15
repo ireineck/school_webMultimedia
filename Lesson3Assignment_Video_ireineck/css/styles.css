@@ -1,0 +1,632 @@
+/* resets */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	outline-style: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* end resets */
+
+
+@font-face {
+	font-family: 'Kelt Caps Freehand';
+	src:url('../fonts/Kelt Caps Freehand.eot');
+	src:url('../fonts/Kelt Caps Freehand.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Kelt Caps Freehand.svg#Kelt Caps Freehand') format('svg'),
+		url('../fonts/Kelt Caps Freehand.woff') format('woff'),
+		url('../fonts/Kelt Caps Freehand.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	background: transparent url(../images/bgMainSwatch.png) repeat 0 0;
+	height: 100%;
+}
+
+body {
+	background: transparent url(../images/bgTop.png) no-repeat center top;
+	height: 100%;
+	width: 900px;
+	margin: 2px auto;
+	color: #76623c;
+	font-size: 13px;
+}
+
+#wrapper {
+	/*border: single 1px #76623c;*/
+	/*border-top: solid 2px #76623c;
+	border-left: solid 2px #76623c;
+	border-right: solid 2px #76623c;
+	border-bottom: solid 2px green;*/
+	position: relative;
+	box-shadow: 1px 1px 8px 1px #76623c;
+   height: 1630px;
+}
+
+
+/**********************************************************
+
+					<header> styles
+
+**********************************************************/
+
+#wrapper > header {
+	margin: 1px auto;
+	width: 90%;
+	position: relative;
+}
+
+#wrapper > header h1 {
+	margin: 0 auto;
+	text-align: center;
+	border-top: solid 1px #76623c;
+	font-family: 'Enriqueta', Arial;
+	/*
+	font-family: 'Enriqueta';
+	font-family: 'Trykker', serif;
+	font-family: 'Mate SC', serif;
+	*/
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px #888;
+	font-size: 40px;
+	position: relative;
+}
+
+/* The text "The" in the top header's <h1> */
+#theText {
+	position: relative;
+	top: -10px;
+	left: -10px;
+	font-size: 18px;
+}
+
+/* The "1870" text in the top header's <h1> */
+#logo1870Text {
+	font-family: 'Enriqueta';
+	font-size: 50px;
+	text-transform: none;
+}
+
+#wrapper > header h2 {
+	border-top: solid 1px #76623c;
+	border-bottom: solid 1px #76623c;
+	text-align: center;
+	margin: 0 auto;
+	text-transform: lowercase;
+	font-family: 'Mate SC', serif;
+	letter-spacing: 4px;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+header p {
+	font-family: 'Trykker', serif;
+	text-shadow: 1px 1px 0px #111;
+	opacity: 0.8;
+}
+
+header p#volumeNumber {
+	position: absolute;
+	top: 12px;
+	left: 10px;
+}
+
+header p#issue {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+
+/**********************************************************
+
+					div#journalInfo
+				Journal information area
+				
+				contains: section#featured
+						  section#navSlogan
+						  section#volumeInfo
+						  section#journalDesc
+
+**********************************************************/
+
+/* ***** div#journalInfo ***** */
+
+#journalInfo {
+	width: 90%;
+	/*position: relative;*/
+	/*border-bottom: solid 1px #76623c;*/
+	margin: 0 auto;
+	/*border: solid 1px red;
+	background-color: #aaa;*/
+}
+
+
+/* ***** Featured Article section ***** */
+
+#journalInfo > section#featured {
+	float: left;
+	width: 220px;
+	text-align: center;
+	font-family: 'Enriqueta', Arial, 'Trebuchet MS', serif;
+	border-right: solid 1px #76623c;
+	position: relative;
+	/*background-color: rgba(118, 98, 60, 0.1);*/
+}
+
+section#featured p#featuredDesc {
+	/*
+	font-family: 'Enriqueta';
+	font-family: 'Trykker', serif;
+	font-family: 'Mate SC', serif;
+	*/
+	font-size: 15px;
+	line-height: 1.2;
+	padding: 4px 0 8px 0;
+	position: relative;
+	z-index: 2;	  /* Note: z-index only works on positioned elements */
+}
+
+section#featured p#featuredDesc span {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-shadow: 0px 1px 1px #fff;
+}
+
+section#featured p#featuredDesc span#the2 {
+	position: relative;
+	top: -3px;
+	left: -5px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-shadow: none;
+	font-weight: normal;
+}
+
+section#featured #battleDate {
+	font-family: 'Mate SC', serif;
+	font-size: 10px;
+	font-weight: 900;
+	padding-bottom: 6px;
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	/*background-color: rgba(118, 98, 60, 0.1);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;*/
+}
+
+section#featured > img#featuredSticker {
+	position: absolute;
+	top: -15px;
+	left: -20px;
+	z-index: 0;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	/* Chrome and Safari */
+	-webkit-transform: rotate(-25deg);
+	/* Firefox */
+	-moz-transform: rotate(-25deg);
+	/* IE - this works for IE9*/
+	-ms-transform: rotate(-25deg);
+	/* Opera */
+	-o-transform: rotate(-25deg);
+	/* Internet Explorer - breaks IE9 */
+	/*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+}
+
+
+/* ***** Navigation and Slogan section ***** */
+
+#journalInfo > section#navSlogan {
+	float: left;
+	width: 360px;
+	text-align: center;
+	padding: 10px 0;
+	/*border: solid 1px red;*/
+	border-right: solid 1px #76623c;
+	position: relative;
+	height: 85px;
+	overflow: hidden;
+}
+
+section#navSlogan nav ul{
+	margin: 0 auto;
+	text-align: center;
+	width: 14.2em;
+	padding-bottom: 20px;
+	background: url(../images/bgHeader_sepia.png) no-repeat center bottom;
+}
+
+section#navSlogan nav ul li {
+	width: 7em;
+	float: left;
+	/*display: inline;*/
+}
+
+section#navSlogan nav ul li a {
+	color: #76623c;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+section#navSlogan nav ul li a:hover {
+	text-decoration: underline;
+}
+
+section#navSlogan p {
+	font-family: 'Enriqueta', 'Mate SC', serif;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: lowercase;
+	letter-spacing: 4px;
+	line-height: 0.9;
+	color: rgba(118, 98, 60, 0.6);
+	text-shadow: 1px 1px 1px #fff;
+}
+
+
+/* ***** Volume Information section ***** */
+
+#journalInfo > section#volumeInfo {
+	float: left;
+	width: 220px;
+	position: relative;
+	height: 102px;
+	overflow: hidden;
+	/*border: solid 1px blue;*/
+}
+
+#journalInfo > section#volumeInfo h4 {
+	float: right;
+	font-family: 'Mate SC', serif;
+	font-size: 13px;
+	padding-top: 3px;
+}
+
+#journalInfo > section#volumeInfo h4 span {
+	font-weight: 600;
+	color: rgb(118, 98, 60);
+}
+
+#journalInfo > section#volumeInfo h4 a {
+	color: rgba(118, 98, 60, 1);
+	text-decoration: none;
+}
+
+#journalInfo > section#volumeInfo h4 a:hover {
+	text-decoration: underline;
+}
+
+#journalInfo > section#volumeInfo p {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	font-family: 'Enriqueta', 'Mate SC', serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 0.9;
+	letter-spacing: 2px;
+	text-shadow: 4px 0px 24px #bbb;
+}
+
+#journalInfo > section#volumeInfo p span {
+	font-family: 'Mate SC', serif;
+	font-size: 10px;
+	text-transform: none;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 0px #bbb;
+	padding-left: 20px;
+}
+
+
+/* ***** Journal Description section ***** */
+
+#journalInfo > section#journalDesc {
+	width: 810px;
+	clear: both;
+	float: left;
+	border-top: solid 1px #76623c;
+	border-bottom: solid 1px #76623c;
+	text-align: center;
+	letter-spacing: 6px;
+	padding: 3px 0;
+	/*font-family: 'Trykker', 'Kelt Caps Freehand', 'Trebuchet MS', serif;*/
+	font-family: 'Kelt Caps Freehand', 'Mate SC', serif;
+	font-size: 15px;
+	background-color: rgba(118, 98, 60, 0.1);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+/**********************************************************
+					END Journal Info styles
+**********************************************************/
+
+
+/* ***** This volume's main image and Journal article links ***** */
+
+#picAndLinks  {
+	width: 90%;
+	clear: both;  /* make sure this container is properly separated from above content */
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 4px;
+	position: relative;
+	border-bottom: solid 1px #8e8e8e;
+	/*border: solid 1px green;
+	background-color: white;*/
+}
+
+#picAndLinks nav {
+	width: 50%;
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+	padding-right: 20px;
+	/*border: solid 1px red;*/
+}
+
+#picAndLinks nav h2 {
+	font-family: 'Mate SC', serif;
+	font-weight: 600;
+	text-align: right;
+	padding-bottom: 4px;
+	text-shadow: 1px 2px 1px #fff;
+	/* background shortcut note: position values are horizontal vertical */
+	background: url(../images/bgSubhead.png) no-repeat 92% 90%;
+}
+
+#picAndLinks nav ul li {
+	text-align:right;
+	font-family: 'Enriqueta', 'Mate SC', serif;
+	font-size: 20px;
+}
+
+#picAndLinks nav ul li a  {
+	/*color: #76623c;*/
+	color: rgba(118, 98, 60, 0.6);
+	text-decoration: none;
+	text-shadow: -1px -1px 20px #ddd;;
+}
+
+#picAndLinks nav ul li a:hover  {
+	color: rgba(118, 98, 60, 1);
+	text-decoration: underline;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+.content{
+   float: left;
+   left: 135px;
+   width: 41em;
+   border-right: 1px solid rgba(118, 98, 60,.7);
+}
+
+.content h2{
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: .8;
+}
+
+.content h2 span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    column-count: 2;
+    margin-left: 15px;
+    margin-right: 15px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px; 
+    column-gap: 5x;
+    text-align: justify;
+    text-shadow: 0px .25px 0px  #76623c ;
+}
+
+ .content p:first-letter{
+     font-size: 20px;
+     font-weight: 600;
+}
+
+ #topContent{
+   border-bottom: 1px dotted rgba(118, 98, 60,.7);
+}
+
+#rulesets {
+   position: absolute;
+   top: 900px;
+   left: 534px;
+   height: 255px;
+   width: 320px;
+   text-align: center;
+   border-bottom: 1px solid rgba(118, 98, 60,.7);
+}
+
+#rulesets h2{
+    width: 275px;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    opacity: .7;
+    font-size: 25px; 
+    background: url(../images/bgHeader_sepia.png) no-repeat center bottom;
+    background-color: rgba(37,35,35,0.1);
+    border-radius: 10px;
+}
+
+#rulesets p {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    opacity: 0.8;
+}
+
+#ruleset1859{
+    position: absolute;
+    left: 45px;
+    top: 55px;
+    z-index: initial;
+    -ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform:  rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+#ruleset1866{
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 100px;
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform:  rotate(5deg);
+    transform: rotate(5deg);
+}
+
+#ruleset1870{
+    position: absolute;
+    margin-left: 10px;
+    top: 55px;
+    z-index: 2;
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    -moz-transform:  rotate(25deg);
+    transform: rotate(25deg);
+}
+
+#rifleVideo{
+    position: absolute;
+    top: 1200px;
+    left: 500px;
+    text-align: center;
+    perspective: 700px;
+}
+
+#rifleVideo h2{
+    width: 275px;
+    position: absolute;
+    left: 55px;
+    top: 5px;
+    opacity: .7;
+    font-size: 25px;
+    background: url(../images/bgHeader_sepia.png) no-repeat center bottom;
+    background-color: rgba(37,35,35,0.1);
+    border-radius: 10px; 
+}
+
+#rifleVideo p{
+    position: absolute;
+    top: 305px;
+    left: 105px;
+    font-size: 16px;
+    color: black; 
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    opacity: 0.8;
+}
+
+#rifleVideo span{
+    font-size: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+
+video {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    height: 200px;
+    opacity: .8;
+    box-shadow: 2px 2px 10px #000;
+    transform: rotate3d(0, 1, 0, 20deg);
+}
+
+#audio {
+    position: absolute;
+    left: 300px;
+    top: 15px;
+    opacity: 0.4;
+}
+
+audio:hover {
+    opacity: .9;
+}
+
+footer {
+    position: absolute;
+    top: 1565px;
+    left: 20px;
+    width: 840px;
+    border-top: 1px solid rgba(118, 98, 60,.7);
+
+}
+
+#germanFlags {
+    position: absolute; 
+    top: -40px;
+    left: 75px;
+    opacity: .6;
+}
+
+#copy {
+    float: left;
+    padding-top: 25px;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #111;
+}
+
+#rights {
+    float: left;
+    padding-top: 25px;
+    padding-left: 15px;
+    font-size: 12px;
+    opacity: .5;
+    text-shadow: 1px 1px 2px 
+}
+
+#footerVolume {
+    float: right;
+    padding-top: 25px;
+    left: 700px;
+    top: 25px;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #111;
+    font-family: 'Enriqueta';
+}
+
+
+
+
+
+
+   
+
+

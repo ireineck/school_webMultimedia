@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Blueprint: Quotes Rotator</title>
+		
+		<meta name="description" content="Blueprint: Quotes Rotator">
+		<meta name="keywords" content="quotes rotator, content rotator, jquery, javascript, fade in, fade out, css3, component, html, web development, blockquote">
+		<meta name="author" content="Codrops" />
+		
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css">
+		
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+		
+			<header class="clearfix">
+				<span>Blueprint</span>
+				<h1>Quotes Rotator</h1>
+				<nav>
+					<a href="http://tympanus.net/Blueprints/NestedAccordion" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
+					<a href="http://tympanus.net/codrops/?p=14591" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
+				</nav>
+			</header>	
+			
+			<div class="main">
+			
+				<div id="quoteRotator" class="quoteRotator">
+				
+					<div class="quoteContent">
+					
+						<img src="images/roon.png" alt="img01">
+						
+						<blockquote>
+						  <p>General Frossard, undefeated, thought he had been defeated, and so he was.  General von Zastrow was half-defeated, but refused to be and so was not.  This was the secret of the Prussian victory.</p>
+						  <footer>Henri Bonnal</footer>
+						</blockquote>
+						
+					</div>
+					
+					<div class="quoteContent">
+					
+						<img src="images/macmahon.png" alt="img02">
+						
+						<blockquote>
+						  <p>One day I would like to greet the Germans here; not even a field mouse would come out alive.</p>
+						  <footer>Marshal Patrice MacMahon</footer>
+						</blockquote>
+						
+					</div>
+					
+					<div class="quoteContent">
+					
+						<img src="images/prince.png" alt="img03">
+						
+						<blockquote>
+						  <p>Fleschuez, one of those diehard officers, was shot in the chest as he urgently conferred with a colleague.  He fell down, gasping for air but otherwise unharmed; he had been saved by his wallet, which he had tucked into his breast pocket before the battle.</p>
+						  <footer>Geoffery Wawro</footer>
+						</blockquote>
+						
+					</div>
+					<div class="quoteContent">
+					
+						<img src="images/roon.png" alt="img04">
+						
+						<blockquote>
+						  <p>He was living day to day, confining himself to the routine details of administration which he understood, and trusting to his good luck to pull him through.</p>
+						  <footer>Jarras</footer>
+						</blockquote>
+						
+					</div>
+					<div class="quoteContent">
+					
+						<img src="images/prince.png" alt="img04">
+						
+						<blockquote>
+						  <p>The casualty returns were to reveal over 8,000 officers and men killed and wounded, mostly within twenty minutes; more than a quarter of the entire corps strength.  If anything was needed to vindicate the French faith in the Chassepot, it was the aristocratic corpses which so thickly strewed the fields between St Privat and St Marie-les-Chenes.</p>
+						  <footer>Michael Howard</footer>
+						</blockquote>
+						
+					</div>
+					<div class="quoteContent">
+					
+						<img src="images/roon.png" alt="img04">
+						
+						<blockquote>
+						  <p>The Bavarians, who had not slept or eaten properly for two entire days, advanced through woods that literally fell down under the hurricane of French fire.</p>
+						  <footer>Geoffery Wawro</footer>
+						</blockquote>
+						
+					</div>
+					<div class="quoteContent">
+					
+						<img src="images/macmahon.png" alt="img04">
+						
+						<blockquote>
+						  <p>The bodies of the fallen lay so thickly together, in their light blue jackets, that they made the ground, according to one observer, look like a field of flax.</p>
+						  <footer>Michael Howard</footer>
+						</blockquote>
+						
+					</div>
+				</div>   <!-- end div.quoteRotator --->
+			</div>  <!-- end div.main --->
+		</div>   <!-- end div.container --->
+		
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.qtRotator.js"></script>
+		
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).qtRotator( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 700,
+					// default transition easing
+					easing : 'ease',
+					// rotator interval (ms)
+					interval : 8000
+				}
+				- destroy:
+				$( selector ).qtRotator( 'destroy' );
+				*/
+
+				$( '#quoteRotator' ).qtRotator();
+
+			} );
+		</script>
+	</body>
+</html>
